@@ -1,0 +1,209 @@
+.section-auto-margin{
+    margin-top: 50px;
+}
+
+.section-header{
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.section-header::before{
+    content: " ";
+    height: 2px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(60px);
+    background-color: #000;
+}
+
+.section-header::after{
+    content: " ";
+    height: 5px;
+    width: 50px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(5px);
+    background-color: #000;
+}
+
+#full-landing{
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/cool-backgroudn-pic/about-us-pic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.my-face{
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #6dd5ed;
+}
+
+.my-img-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.my-img-box h2{
+    margin-top: 10px;
+    font-size: 33px;
+    color: #FFF;
+}
+
+.my-img-box h1{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.navbar-brand img{
+    width: 80px;
+}
+
+.nav-link{
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFF !important;
+}
+
+.nav-link::before{
+    content: "";
+    height: 5px;
+    width: 0%;
+    background-color: #FFF;
+    display: block;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+.nav-link:hover::before{
+    width: 100%;
+}
+
+#navigator{
+    background-image: linear-gradient(to right, #000000, #434343);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.my-profile-pic{
+    width: 200px;
+    height: 300px;
+    border: 2px solid #000;
+    box-shadow: 4px 5px 12px 0px #000;
+}
+
+.my-profile-content{
+    margin-top: 20px;
+}
+
+#resume{
+    background-color: #eef2f3;
+}
+
+.resume-item{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.resume-header{
+    background-color: #000;
+    color: #FFF;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.resume-content{
+    padding: 10px;
+}
+
+.service-item{
+    margin-top: 10px;
+    padding: 10px;
+    transition: all 0.2s ease-in 0s;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    cursor: pointer;
+}
+
+.service-item i{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.service-item p{
+    line-height: 25px;
+    margin-top: 10px;
+}
+
+.service-item:hover{
+    background-color: #2a5298;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.service-item:hover *{
+    color: white;
+}
+
+.social-media-links i{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.social-media-links i:first-child:hover{
+    transform: translateY(-5px);
+    color: blue;
+}
+
+.social-media-links i:nth-child(2):hover{
+    transform: translateY(-5px);
+    color: aqua;
+}
+
+.social-media-links i:nth-child(3):hover{
+    transform: translateY(-5px);
+    color: #1e3c72;
+}
+
+.social-media-links i:last-child:hover{
+    transform: translateY(-5px);
+    color: red;
+}
+
+.contact-form textarea{
+    margin-bottom: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button{
+    width: 30%;
+    color: blue;
+    border: 1px solid blue;
+    transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s;
+}
+
+.contact-form button:hover{
+    color: white;
+    background-color: blue;
+}
+
+footer{
+    height: 50px;
+    background-color: #000;
+    color: #FFF;
+}
